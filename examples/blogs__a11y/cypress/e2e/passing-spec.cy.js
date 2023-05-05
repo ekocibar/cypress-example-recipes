@@ -5,7 +5,7 @@ describe('A11y passes', () => {
   })
 
   it('accessibility check', () => {
-    cy.contains('This page should not pass A11y checks')
+    cy.contains('This page should pass A11y checks')
     cy.injectAxe()
     cy.checkA11y()
   })
